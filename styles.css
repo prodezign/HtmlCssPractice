@@ -322,6 +322,7 @@
     background-color:#F5F6FF; /* Adjust the color of the lines */
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 0px;
 }
 
 .feat-heading-txt::before {
