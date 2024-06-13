@@ -434,11 +434,6 @@ div .fa-layer-group {
   margin: 0 auto;
   width: 80%;
 }
-.test-section > div {
-  padding: 20px;
-  /* width: 100%; */
-  margin: 0 auto;
-}
 .test-profileimg {
   background-image: url(/images/image.jpeg);
   width: 70px;
