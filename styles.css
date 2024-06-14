@@ -463,3 +463,107 @@ div .fa-layer-group {
   color: #717070;
   line-height: 2em;
 }
+.price-section {
+  width: 80%;
+  height: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.price-section-heading1 {
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+}
+.price-section-heading1::before,
+.price-section-heading1::after {
+  content: "";
+  position: absolute;
+  top: 95%; /* Vertically center the lines */
+  width: 5%; /* Adjust the width of the lines as needed */
+  height: 1px; /* Adjust the thickness of the lines */
+  background-color: #000000; /* Adjust the color of the lines */
+  margin-left: 40%;
+  margin-right: 40%;
+  /* margin-top: 0px; */
+}
+
+.price-section-heading1::before {
+  left: 0; /* Position the line to the left of the heading */
+  transform: translateY(-20%); /* Center the line vertically */
+}
+
+.price-section-heading1::after {
+  right: 0; /* Position the line to the right of the heading */
+  transform: translateY(-20%); /* Center the line vertically */
+}
+.price-section-heading2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.price-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(300px, auto);
+  grid-gap: 2em;
+  width: 75%;
+  margin: 0 auto;
+}
+div .fa-code-compare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(12, 169, 236);
+}
+.price-grid-cnt1 p {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.price-grid-card {
+  /* height: 500px; */
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.081),
+    0 6px 20px 0 rgba(0, 0, 0, 0.112);
+}
+.price-grid-cnt1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  background-color: #e0e0e0;
+}
+.price-grid-cnt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.price-grid-cnt2 li {
+  padding: 10px 0px;
+}
+.price-grid-cnt2 p {
+  padding-top: 40px;
+}
+.price-grid-btn button {
+  margin: 40px 0px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(4, 68, 206);
+}
+.price-grid-btn button a {
+  color: rgb(41, 41, 41);
+}
+.price-grid-btn {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
