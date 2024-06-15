@@ -1,11 +1,15 @@
+/* General Styles */
 * {
   padding: 0;
   margin: 0;
+  /* Uncomment if needed to include padding and border in element's total width and height */
   /* box-sizing: border-box; */
   list-style: none;
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
+
+/* Hero Section */
 .hero {
   height: 100vh;
   background-image: linear-gradient(
@@ -18,38 +22,47 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Header Section */
 .header {
-  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0px;
-  margin: 0px auto;
-  /* height: 80px; */
+  padding: 40px 0;
+  margin: 0 auto;
   width: 85%;
   color: white;
 }
+
 .header-title img {
   max-width: 100px;
 }
-.nav {
+
+/* Navigation Menu */
+.nav ul {
   display: flex;
 }
+
 .nav li {
-  padding: 0px 40px;
+  padding: 0 40px;
 }
+
 .nav li a {
   color: white;
 }
 
+/* Button Styles */
 .btn button {
   padding: 14px 30px;
   border-radius: 30px;
   border: none;
 }
+
 .btn button a {
   color: black;
 }
+
+/* Hero Content */
 .hero-content {
   display: flex;
   flex-basis: 80%;
@@ -57,42 +70,46 @@
   align-items: center;
   justify-content: center;
 }
+
 .hero-image {
   margin-right: 40px;
 }
+
 .hero-content-text {
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 10% 20px 0;
   margin-top: -400px;
 }
+
 .hero-content-text h1 {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 0;
   line-height: 70px;
   font-size: 60px;
   color: rgb(236, 246, 255);
 }
+
 .hero-content-text p {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 0;
   line-height: 25px;
   font-size: 16px;
   color: rgb(236, 246, 255);
 }
+
 .hero-content-btn {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
+
 .hero-content-btn button {
   padding: 14px 20px;
   border-radius: 30px;
   background-color: rgb(236, 246, 255);
   border: none;
 }
+
 .hero-content-btn button a {
   color: black;
 }
+
+/* About Us Section */
 .section-abt {
   display: flex;
   align-items: center;
@@ -102,17 +119,19 @@
   width: 100%;
   margin-top: 100px;
 }
+
 .section-abt img {
   width: 50px;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
+
 .section-abt p.ab-heading {
-  padding: 20px 0px;
-  padding-top: 0px;
+  padding: 20px 0 0 0;
   position: relative;
   text-align: center;
 }
 
+/* About Us Heading Lines */
 .section-abt p.ab-heading::before,
 .section-abt p.ab-heading::after {
   content: "";
@@ -134,28 +153,32 @@
   right: 0; /* Position the line to the right of the heading */
   transform: translateY(-50%); /* Center the line vertically */
 }
+
 .section-abt p.cnt1 {
-  padding: 20px 0px;
-  padding-top: 0px;
+  padding: 20px 0 0 0;
   font-size: 40px;
   width: 60%;
   text-align: center;
   line-height: 60px;
   color: rgb(4, 68, 206);
 }
+
 .section-abt p.cnt2 {
-  padding: 20px 0px;
+  padding: 20px 0;
   font-size: 16px;
   width: 60%;
   text-align: center;
   line-height: 30px;
   color: rgb(156, 176, 188);
 }
+
+/* Progress Section */
 .section-prog {
   display: flex;
   background-color: #f5f6ff;
   margin: 100px 0;
 }
+
 .prog {
   display: flex;
   justify-content: center;
@@ -164,24 +187,29 @@
   height: 600px;
   margin-left: 15%;
 }
+
+.prog-content-btn {
+  padding: 20px 0;
+}
+
 .prog-content-btn button {
   padding: 14px 20px;
   border-radius: 30px;
   background-color: rgb(4, 68, 206);
   border: none;
 }
+
 .prog-content-btn button a {
   color: rgb(255, 255, 255);
 }
-.prog-content-btn {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
+
 .prog-content-left p.heading {
   font-size: 16px;
   padding-bottom: 40px;
   position: relative;
 }
+
+/* Progress Heading Line */
 .prog-content-left p.heading::after {
   content: "";
   position: absolute;
@@ -196,6 +224,7 @@
   right: -1; /* Position the line to the right of the heading */
   transform: translateY(60%); /* Center the line vertically */
 }
+
 .prog-img-left {
   margin-right: -15%;
   z-index: 1;
@@ -206,6 +235,7 @@
   font-size: 36px;
   padding-bottom: 40px;
 }
+
 .prog-content-left p.cnt {
   font-size: 16px;
   padding-bottom: 40px;
@@ -216,16 +246,18 @@
 .prog-img-right {
   width: 40%;
   height: 600px;
-  size: 400px;
   background-image: url(/images/christin-hume-Hcfwew744z4-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
+
+/* Video Section */
 .section-video {
   display: flex;
   flex-direction: row-reverse;
   margin: 200px 0;
 }
+
 .video {
   display: flex;
   justify-content: center;
@@ -236,24 +268,29 @@
   margin-left: 24%;
   margin-right: 10%;
 }
+
+.video-content-btn {
+  padding: 20px 0;
+}
+
 .video-content-btn button {
   padding: 14px 20px;
   border-radius: 30px;
   background-color: rgb(4, 68, 206);
   border: none;
 }
+
 .video-content-btn button a {
   color: rgb(255, 255, 255);
 }
-.video-content-btn {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
+
 .video-content-left p.heading {
   font-size: 16px;
   padding-bottom: 40px;
   position: relative;
 }
+
+/* Video Heading Line */
 .video-content-left p.heading::after {
   content: "";
   position: absolute;
@@ -268,6 +305,7 @@
   right: -1; /* Position the line to the right of the heading */
   transform: translateY(60%); /* Center the line vertically */
 }
+
 .video-img-left {
   margin-left: 50%;
   z-index: 1;
@@ -278,6 +316,7 @@
   font-size: 36px;
   padding-bottom: 40px;
 }
+
 .video-content-left p.cnt {
   font-size: 16px;
   padding-bottom: 40px;
@@ -290,11 +329,12 @@
   align-items: center;
   width: 40%;
   height: 600px;
-  size: 400px;
   background-image: url(/images/alex-kotliarskyi-ourQHRTE2IM-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
+
+/* Features Section */
 .feat-section {
   display: flex;
   align-items: center;
@@ -304,15 +344,18 @@
   height: 900px;
   width: 100%;
 }
+
 .feat-heading {
   text-align: center;
   margin-top: 15%;
 }
+
 .feat-heading-txt {
   position: relative;
   color: #f5f6ff;
 }
 
+/* Feature Heading Lines */
 .feat-heading-txt::before,
 .feat-heading-txt::after {
   content: "";
@@ -323,7 +366,6 @@
   background-color: #f5f6ff; /* Adjust the color of the lines */
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 0px;
 }
 
 .feat-heading-txt::before {
@@ -335,12 +377,15 @@
   right: 0; /* Position the line to the right of the heading */
   transform: translateY(-50%); /* Center the line vertically */
 }
+
 .feat-heading-txt2 {
   font-size: 35px;
   color: #f5f6ff;
   font-weight: 300;
   padding-top: 40px;
 }
+
+/* Icon Styles */
 div .fa-layer-group {
   display: flex;
   align-items: center;
@@ -350,11 +395,13 @@ div .fa-layer-group {
   width: 60px;
   background-color: aqua;
 }
+
 .feat-txt1 {
   font-size: 18px;
   color: #f5f6ff;
   padding-left: 6%;
 }
+
 .feat-txt2 {
   line-height: 2rem;
   font-size: 16px;
@@ -362,13 +409,15 @@ div .fa-layer-group {
   padding-left: 6%;
   font-weight: 200;
 }
+
 .feat-cont {
   display: flex;
   align-items: center;
   justify-content: start;
   height: 150px;
-  padding: 0px 10%;
+  padding: 0 10%;
 }
+
 .feat-main-cnt {
   display: flex;
   width: 80%;
@@ -376,26 +425,33 @@ div .fa-layer-group {
   justify-content: center;
   margin: 0 auto;
 }
+
 .feat-img-middle {
   display: flex;
   justify-content: center;
 }
+
 .feat-img-middle img {
   width: 85%;
   margin-top: 25%;
   padding-right: 20%;
 }
+
+/* Testimonial Section */
 .test-section {
   width: 80%;
   height: 800px;
   display: block;
   margin: 0 auto;
 }
+
 .test-section-heading1 {
   padding-top: 200px;
   text-align: center;
   position: relative;
 }
+
+/* Testimonial Heading Lines */
 .test-section-heading1::before,
 .test-section-heading1::after {
   content: "";
@@ -406,7 +462,6 @@ div .fa-layer-group {
   background-color: #000000; /* Adjust the color of the lines */
   margin-left: 40%;
   margin-right: 40%;
-  /* margin-top: 0px; */
 }
 
 .test-section-heading1::before {
@@ -418,6 +473,7 @@ div .fa-layer-group {
   right: 0; /* Position the line to the right of the heading */
   transform: translateY(-20%); /* Center the line vertically */
 }
+
 .test-section-heading2 {
   text-align: center;
   padding-top: 20px;
@@ -434,35 +490,41 @@ div .fa-layer-group {
   margin: 0 auto;
   width: 80%;
 }
+
 .test-profileimg {
   background-image: url(/images/image.jpeg);
   width: 70px;
   height: 70px;
   margin-top: -50px;
-  /* margin-left: 20px; */
   background-size: cover;
   background-position: center;
   border-radius: 50%;
   border: 6px solid white;
 }
+
 .test-cnt {
   background-color: #f5f6ff;
   padding-left: 20px;
 }
+
 .test-cnt-p1 {
   padding-top: 20px;
   color: #5e88fc;
   font-size: 20px;
 }
+
 .test-cnt-p2 {
-  padding: 20px 0px;
+  padding: 20px 0;
   color: #717070;
 }
+
 .test-cnt-p3 {
   padding-bottom: 40px;
   color: #717070;
   line-height: 2em;
 }
+
+/* Pricing Plan Section */
 .price-section {
   width: 80%;
   height: 800px;
@@ -470,11 +532,14 @@ div .fa-layer-group {
   margin: 0 auto;
   margin-bottom: 200px;
 }
+
 .price-section-heading1 {
   padding-top: 100px;
   text-align: center;
   position: relative;
 }
+
+/* Pricing Plan Heading Lines */
 .price-section-heading1::before,
 .price-section-heading1::after {
   content: "";
@@ -485,7 +550,6 @@ div .fa-layer-group {
   background-color: #000000; /* Adjust the color of the lines */
   margin-left: 40%;
   margin-right: 40%;
-  /* margin-top: 0px; */
 }
 
 .price-section-heading1::before {
@@ -497,6 +561,7 @@ div .fa-layer-group {
   right: 0; /* Position the line to the right of the heading */
   transform: translateY(-20%); /* Center the line vertically */
 }
+
 .price-section-heading2 {
   text-align: center;
   padding-top: 20px;
@@ -504,6 +569,7 @@ div .fa-layer-group {
   font-size: 30px;
   font-weight: 300;
 }
+
 .price-section-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -512,6 +578,8 @@ div .fa-layer-group {
   width: 75%;
   margin: 0 auto;
 }
+
+/* Icon Styles */
 div .fa-code-compare {
   display: flex;
   align-items: center;
@@ -521,17 +589,19 @@ div .fa-code-compare {
   width: 60px;
   background-color: rgb(12, 169, 236);
 }
+
 .price-grid-cnt1 p {
   padding-top: 20px;
   font-size: 18px;
   font-weight: 600;
 }
+
 .price-grid-card {
-  /* height: 500px; */
   background-color: #f5f5f5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.081),
     0 6px 20px 0 rgba(0, 0, 0, 0.112);
 }
+
 .price-grid-cnt1 {
   display: flex;
   align-items: center;
@@ -540,6 +610,7 @@ div .fa-code-compare {
   height: 200px;
   background-color: #e0e0e0;
 }
+
 .price-grid-cnt2 {
   display: flex;
   align-items: center;
@@ -547,23 +618,28 @@ div .fa-code-compare {
   flex-direction: column;
   padding-top: 30px;
 }
+
 .price-grid-cnt2 li {
-  padding: 10px 0px;
+  padding: 10px 0;
 }
+
 .price-grid-cnt2 p {
   padding-top: 40px;
 }
+
+.price-grid-btn {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
 .price-grid-btn button {
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 14px 20px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid rgb(4, 68, 206);
 }
+
 .price-grid-btn button a {
   color: rgb(41, 41, 41);
-}
-.price-grid-btn {
-  padding-bottom: 20px;
-  padding-top: 40px;
 }
