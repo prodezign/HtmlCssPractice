@@ -136,7 +136,7 @@
 .section-abt p.ab-heading::after {
   content: "";
   position: absolute;
-  top: 25%; /* Vertically center the lines */
+  top: 80%; /* Vertically center the lines */
   width: 60%; /* Adjust the width of the lines as needed */
   height: 1px; /* Adjust the thickness of the lines */
   background-color: #000; /* Adjust the color of the lines */
